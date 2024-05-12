@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   if (networkPasswordSubmitBtn) {
     networkPasswordSubmitBtn.addEventListener("click", event => {
       if (networkPasswordField.value == networkPassword) {
-        window.location.href = "/complete.html";
+        window.location.href = "/challenges/hard/cow.html";
       } else {
         throwError();
       };

@@ -6,8 +6,6 @@
 //
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  // Remove hard mode startTime
-  localStorage.removeItem("startTime");
 
   //
   // ---------------------------------------------------------
@@ -21,7 +19,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   if (hiddenPasswordSubmitBtn) {
     hiddenPasswordSubmitBtn.addEventListener("click", event => {
       if (hiddenPasswordField.value == hiddenPasswordField.getAttribute("data-password")) {
-        window.location.href = "/challenges/normal/bat.html";
+        window.location.href = "/challenges/hard/bat.html";
       } else {
         throwError();
       };
@@ -38,7 +36,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   if (disabledBtn) {
     disabledBtn.addEventListener("click", event => {
-      window.location.href = "/challenges/normal/cow.html";
+      window.location.href = "/challenges/hard/fox.html";
     });
   };
 
@@ -50,7 +48,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   if (document.body.id == "js-challenge") {
     document.addEventListener("dblclick", function (e) {
-      window.location.href = "/challenges/normal/duck.html";
+      window.location.href = "/challenges/hard/duck.html";
     });
   };
 
@@ -69,7 +67,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     storagePasswordSubmitBtn.addEventListener("click", event => {
       const password = localStorage.getItem("password");
       if (storagePasswordField.value == password) {
-        window.location.href = "/challenges/normal/gecko.html";
+        window.location.href = "/challenges/hard/gecko.html";
       } else {
         throwError();
       }
@@ -96,7 +94,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     consolePasswordSubmitBtn.addEventListener("click", event => {
       if (consolePasswordField.value == consolePassword) {
-        window.location.href = "/challenges/normal/hare.html";
+        window.location.href = "/challenges/hard/hare.html";
       } else {
         throwError();
 
@@ -124,7 +122,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   if (stylesPasswordSubmitBtn) {
     stylesPasswordSubmitBtn.addEventListener("click", event => {
       if (stylesPasswordField.value == stylesPassword) {
-        window.location.href = "/challenges/normal/jellyfish.html";
+        window.location.href = "/challenges/hard/jellyfish.html";
       } else {
         throwError();
       };

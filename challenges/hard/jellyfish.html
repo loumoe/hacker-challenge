@@ -9,21 +9,13 @@
   </head>
 
   <body>
-    <div class="help-section">
-      <div class="help-blurb hidden">
-        <p>Right click in the browser window and click the last option, <strong>"Inspect"</strong>.</p>
-        <p>Open the <strong>"Network"</strong> tab and find the <code>jellyfish-password.json</code>. If you don't see <code>jellyfish-password.json</code>, try refreshing your page with the inspector open.</p>
-        <p>Click on <code>jellyfish-password.json</code> and use the <strong>"Preview"</strong> tab to inspect the response.</p>
-      </div>
-      <a class="help-button closed">?</a>
-    </div>
 
     <div class="main">
       <section>
         <h1>
           <a href="/">Hacker Challenge</a>
         </h1>
-        <h2>Challenge #10: Fetch the password from the "Network" tab</h2>
+        <h2>Challenge #7: Fetch the password from the "Network" tab</h2>
         <div class="challenge">
           <div class="form">
             <input class="network-password" type="text" placeholder="Enter password" />
@@ -35,7 +27,7 @@
     </div>
 
     <script src="/scripts/global.js"></script>
-    <script src="/scripts/normal.js"></script>
+    <script src="/scripts/challenge.js"></script>
     <script>
         fetch("./jellyfish-password.json", { method: 'GET'})
     </script>
