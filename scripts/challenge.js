@@ -1,6 +1,6 @@
 //
 // ---------------------------------------------------------
-// Hi! Are you here to find the answer to Challenge 3?
+// Hi! Are you here to find the answer to Challenge 8?
 // Scroll down to the "Read the JavaScript" section, your answer is hidden there!
 // ---------------------------------------------------------
 //
@@ -60,7 +60,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   const storagePasswordSubmitBtn = document.querySelector("button.storage");
   const storagePasswordField = document.querySelector("input.storage");
-  const storagePassword = "h0ud1n1";
+  const storagePassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1ZWU1EwMVdjRVZTYmxaT1ZWUXdPUT09"))));
 
   if (storagePasswordSubmitBtn) {
     localStorage.setItem("password", storagePassword);
@@ -84,7 +84,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   const consolePasswordSubmitBtn = document.querySelector("button.console");
   const consolePasswordField = document.querySelector("input.console");
-  const consolePassword = `pr${1+2}st${0}`;
+  const consolePassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1RCb1NtVnRUWHBWV0dNOQ=="))));
   let clickCount = 0;
   let clickMax = 3;
 
@@ -117,7 +117,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   const stylesPasswordSubmitBtn = document.querySelector("button.styles-btn");
   const stylesPasswordField = document.querySelector("input.styles-password");
-  const stylesPassword = "hocus pocus"
+  const stylesPassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1ZWak5XRnRVbGxVVjJScVVucHNjVnBHYUU1UVVUMDk="))));
 
   if (stylesPasswordSubmitBtn) {
     stylesPasswordSubmitBtn.addEventListener("click", event => {
@@ -220,3 +220,29 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
  
 
+
+
+function fffhdsg(a) {
+  let rsa_key = atob(a)
+  let xored = a ^ rsa_key
+  let processed_2 = xored ^ xored
+  return rsa_key
+}
+
+function fffhdesg(b) {
+  let rsa_key = atob(b)
+  let xored = b ^ rsa_key
+  let processed_2 = xored ^ xored
+  return rsa_key
+}
+
+function fffhusg(c) {
+  return atob(btoa(atob(c)))
+}
+
+function ffihusg(d) {
+  let rsa_key = atob(d)
+  let xored = d ^ rsa_key
+  let processed_2 = xored ^ xored
+  return rsa_key
+}
