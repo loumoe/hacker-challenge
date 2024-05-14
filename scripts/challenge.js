@@ -128,3 +128,95 @@ window.addEventListener("DOMContentLoaded", (event) => {
       };
     });
   };
+
+
+  //
+  // ---------------------------------------------------------
+  // Pico ctf Challenges
+  // ---------------------------------------------------------
+  //
+
+  //
+  // ---------------------------------------------------------
+  // Inspector
+  // ---------------------------------------------------------
+  //
+
+  const inspectorSubmitButton = document.querySelector("button.inspector");
+  const inspectorPasswordField = document.querySelector("input.inspector");
+  const inspectorPassword = "picoCTF{tru3_d3t3ct1ve_0r_ju5t_lucky?2e7b23e3}"
+
+  if (inspectorSubmitButton) {
+    inspectorSubmitButton.addEventListener("click", event => {
+      if (inspectorPasswordField.value == inspectorPassword) {
+        window.location.href = "/success.html";
+      } else {
+        throwError();
+      };
+    });
+  };
+
+  //
+  // ---------------------------------------------------------
+  // GET aHEAD
+  // ---------------------------------------------------------
+  //
+
+  const getaheadSubmitButton = document.querySelector("button.getahead");
+  const getaheadPasswordField = document.querySelector("input.getahead");
+  const getaheadPassword = "picoCTF{r3j3ct_th3_du4l1ty_2e5ba39f}"
+
+  if (getaheadSubmitButton) {
+    getaheadSubmitButton.addEventListener("click", event => {
+      if (getaheadPasswordField.value == getaheadPassword) {
+        window.location.href = "/success.html";
+      } else {
+        throwError();
+      };
+    });
+  };
+
+
+  //
+  // ---------------------------------------------------------
+  // Who are you?
+  // ---------------------------------------------------------
+  //
+
+
+  const whoareyouSubmitButton = document.querySelector("button.whoareyou");
+  const whoareyouPasswordField = document.querySelector("input.whoareyou");
+  const whoareyouPassword = "flag"
+
+  if (whoareyouSubmitButton) {
+    whoareyouSubmitButton.addEventListener("click", event => {
+      if (whoareyouPasswordField.value == whoareyouPassword) {
+        window.location.href = "/success.html";
+      } else {
+        throwError();
+      };
+    });
+  };
+
+    // ---------------------------------------------------------
+  // Picobrowser
+  // ---------------------------------------------------------
+  //
+
+
+  const picobrowserSubmitButton = document.querySelector("button.picobrowser");
+  const picobrowserPasswordField = document.querySelector("input.picobrowser");
+  const picobrowserPassword = "picoCTF{p1c0_s3cr3t_ag3nt_e9b160d0}"
+
+  if (picobrowserSubmitButton) {
+    picobrowserSubmitButton.addEventListener("click", event => {
+      if (picobrowserPasswordField.value == picobrowserPassword) {
+        window.location.href = "/success.html";
+      } else {
+        throwError();
+      };
+    });
+  };
+
+ 
+
