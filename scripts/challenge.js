@@ -144,7 +144,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   const inspectorSubmitButton = document.querySelector("button.inspector");
   const inspectorPasswordField = document.querySelector("input.inspector");
-  const inspectorPassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1RCa2MyRnRTWGRVYkZaVFltNVNNMVJXWkU1a01XZDZWRmh3V2swd2JEWmFSVmsxWVVad05sUnVWbXRTYW14elZERmtTbVZGTlhGUmJYUk9VMFJCT1E9PQ=="))));
+  const inspectorPassword = "picoCTF{tru3_d3t3ct1ve_0r_ju5t_lucky?2e7b23e3}"
 
   if (inspectorSubmitButton) {
     inspectorSubmitButton.addEventListener("click", event => {
@@ -164,7 +164,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   const getaheadSubmitButton = document.querySelector("button.getahead");
   const getaheadPasswordField = document.querySelector("input.getahead");
-  const getaheadPassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1RCa2MyRnRTWGRVYkZaVFltNVNOVlJVU25abGJHdDZWVzFhYTFJeVpEWlhSRXBUVFZVMVNHUXphR3RUUjNodFZGY3hWazFXYkhSU1dIQlFWakZ2TlE9PQ=="))))
+  const getaheadPassword = "picoCTF{r3j3ct_th3_du4l1ty_2e5ba39f}"
 
   if (getaheadSubmitButton) {
     getaheadSubmitButton.addEventListener("click", event => {
@@ -186,7 +186,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   const whoareyouSubmitButton = document.querySelector("button.whoareyou");
   const whoareyouPasswordField = document.querySelector("input.whoareyou");
-  const whoareyouPassword = "flag"
+  const whoareyouPassword = "picoCTF{http_h34d3rs_v3ry_c0Ol_much_w0w_20ace0e4}"
 
   if (whoareyouSubmitButton) {
     whoareyouSubmitButton.addEventListener("click", event => {
