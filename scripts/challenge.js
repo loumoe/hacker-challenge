@@ -7,134 +7,134 @@
 
 window.addEventListener("DOMContentLoaded", (event) => {
 
-  //
+  
   // ---------------------------------------------------------
   // Hidden password challenge
   // ---------------------------------------------------------
-  //
+  
 
-  const hiddenPasswordSubmitBtn = document.querySelector("button.hidden-password");
-  const hiddenPasswordField = document.querySelector("input.hidden-password");
+    const hiddenPasswordSubmitBtn = document.querySelector("button.hidden-password");
+    const hiddenPasswordField = document.querySelector("input.hidden-password");
 
-  if (hiddenPasswordSubmitBtn) {
-    hiddenPasswordSubmitBtn.addEventListener("click", event => {
-      if (hiddenPasswordField.value == hiddenPasswordField.getAttribute("data-password")) {
-        window.location.href = "/challenges/hard/bat.html";
-      } else {
-        throwError("");
-      };
-    });
-  };
-
-  //
-  // ---------------------------------------------------------
-  // Disabled button challenge
-  // ---------------------------------------------------------
-  //
-
-  const disabledBtn = document.querySelector("button[disabled]");
-
-  if (disabledBtn) {
-    disabledBtn.addEventListener("click", event => {
-      window.location.href = "/challenges/hard/fox.html";
-    });
-  };
-
-  //
-  // ---------------------------------------------------------
-  // Read the JavaScript challenge
-  // ---------------------------------------------------------
-  //
-
-  if (document.body.id == "js-challenge") {
-    document.addEventListener("dblclick", function (e) {
-      window.location.href = "/challenges/hard/duck.html";
-    });
-  };
-
-  //
-  // ---------------------------------------------------------
-  // Local Storage challenge
-  // ---------------------------------------------------------
-  //
-
-  const storagePasswordSubmitBtn = document.querySelector("button.storage");
-  const storagePasswordField = document.querySelector("input.storage");
-  const storagePassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1ZWU1EwMVdjRVZTYmxaT1ZWUXdPUT09"))));
-
-  if (storagePasswordSubmitBtn) {
-    localStorage.setItem("password", storagePassword);
-    storagePasswordSubmitBtn.addEventListener("click", event => {
-      const password = localStorage.getItem("password");
-      if (storagePasswordField.value == password) {
-        window.location.href = "/challenges/hard/gecko.html";
-      } else {
-        throwError("");
-      }
-    });
-  } else {
-    localStorage.removeItem("password", storagePassword);
-  };
-
-  //
-  // ---------------------------------------------------------
-  // JavaScript Console challenge
-  // ---------------------------------------------------------
-  //
-
-  const consolePasswordSubmitBtn = document.querySelector("button.console");
-  const consolePasswordField = document.querySelector("input.console");
-  const consolePassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1RCb1NtVnRUWHBWV0dNOQ=="))));
-  let clickCount = 0;
-  let clickMax = 3;
-
-  if (consolePasswordSubmitBtn) {
-    console.log("-------------------------------------------------")
-    console.log(`Click the submit button on this page ${clickMax - clickCount} times to receive the password.`)
-
-    consolePasswordSubmitBtn.addEventListener("click", event => {
-      if (consolePasswordField.value == consolePassword) {
-        window.location.href = "/challenges/hard/hare.html";
-      } else {
-        throwError("");
-
-        if (clickCount >= 2) {
-          console.log(`The password is ${consolePassword}`)
+    if (hiddenPasswordSubmitBtn) {
+      hiddenPasswordSubmitBtn.addEventListener("click", event => {
+        if (hiddenPasswordField.value == hiddenPasswordField.getAttribute("data-password")) {
+          window.location.href = "/challenges/hard/bat.html";
         } else {
-          clickCount++;
-          console.log(`Click the submit button on this page ${clickMax - clickCount} more times to receive the password.`)
+          throwError("aardvark");
         };
-      };
-    });
-  };
-});
+      });
+    };
 
-  //
-  // ---------------------------------------------------------
-  // Styles challenge
-  // ---------------------------------------------------------
-  //
+    //
+    // ---------------------------------------------------------
+    // Disabled button challenge
+    // ---------------------------------------------------------
+    //
 
-  const stylesPasswordSubmitBtn = document.querySelector("button.styles-btn");
-  const stylesPasswordField = document.querySelector("input.styles-password");
-  const stylesPassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1ZWak5XRnRVbGxVVjJScVVucHNjVnBHYUU1UVVUMDk="))));
+    const disabledBtn = document.querySelector("button[disabled]");
 
-  if (stylesPasswordSubmitBtn) {
-    stylesPasswordSubmitBtn.addEventListener("click", event => {
-      if (stylesPasswordField.value == stylesPassword) {
-        window.location.href = "/challenges/hard/jellyfish.html";
-      } else {
-        throwError("");
-      };
-    });
-  };
+    if (disabledBtn) {
+      disabledBtn.addEventListener("click", event => {
+        window.location.href = "/challenges/hard/fox.html";
+      });
+    };
+
+    //
+    // ---------------------------------------------------------
+    // Read the JavaScript challenge
+    // ---------------------------------------------------------
+    //
+
+    if (document.body.id == "js-challenge") {
+      document.addEventListener("dblclick", function (e) {
+        window.location.href = "/challenges/hard/duck.html";
+      });
+    };
+
+    //
+    // ---------------------------------------------------------
+    // Local Storage challenge
+    // ---------------------------------------------------------
+    //
+
+    const storagePasswordSubmitBtn = document.querySelector("button.storage");
+    const storagePasswordField = document.querySelector("input.storage");
+    const storagePassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1ZWU1EwMVdjRVZTYmxaT1ZWUXdPUT09"))));
+
+    if (storagePasswordSubmitBtn) {
+      localStorage.setItem("password", storagePassword);
+      storagePasswordSubmitBtn.addEventListener("click", event => {
+        const password = localStorage.getItem("password");
+        if (storagePasswordField.value == password) {
+          window.location.href = "/challenges/hard/gecko.html";
+        } else {
+          throwError("fox");
+        }
+      });
+    } else {
+      localStorage.removeItem("password", storagePassword);
+    };
+
+    //
+    // ---------------------------------------------------------
+    // JavaScript Console challenge
+    // ---------------------------------------------------------
+    //
+
+    const consolePasswordSubmitBtn = document.querySelector("button.console");
+    const consolePasswordField = document.querySelector("input.console");
+    const consolePassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1RCb1NtVnRUWHBWV0dNOQ=="))));
+    let clickCount = 0;
+    let clickMax = 3;
+
+    if (consolePasswordSubmitBtn) {
+      console.log("-------------------------------------------------")
+      console.log(`Click the submit button on this page ${clickMax - clickCount} times to receive the password.`)
+
+      consolePasswordSubmitBtn.addEventListener("click", event => {
+        if (consolePasswordField.value == consolePassword) {
+          window.location.href = "/challenges/hard/hare.html";
+        } else {
+          throwError("gecko");
+
+          if (clickCount >= 2) {
+            console.log(`The password is ${consolePassword}`)
+          } else {
+            clickCount++;
+            console.log(`Click the submit button on this page ${clickMax - clickCount} more times to receive the password.`)
+          };
+        };
+      });
+    };
 
 
-  //
-  // ---------------------------------------------------------
-  // Pico ctf Challenges
-  // ---------------------------------------------------------
-  //
+    //
+    // ---------------------------------------------------------
+    // Styles challenge
+    // ---------------------------------------------------------
+    //
+
+    const stylesPasswordSubmitBtn = document.querySelector("button.styles-btn");
+    const stylesPasswordField = document.querySelector("input.styles-password");
+    const stylesPassword = fffhdsg(fffhdesg(fffhusg(ffihusg("V1ZWak5XRnRVbGxVVjJScVVucHNjVnBHYUU1UVVUMDk="))));
+
+    if (stylesPasswordSubmitBtn) {
+      stylesPasswordSubmitBtn.addEventListener("click", event => {
+        if (stylesPasswordField.value == stylesPassword) {
+          window.location.href = "/challenges/hard/jellyfish.html";
+        } else {
+          throwError("iguana");
+        };
+      });
+    };
+
+
+    //
+    // ---------------------------------------------------------
+    // Pico ctf Challenges
+    // ---------------------------------------------------------
+    //
 
   //
   // ---------------------------------------------------------
@@ -151,54 +151,54 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (inspectorPasswordField.value == inspectorPassword) {
         window.location.href = "/success.html";
       } else {
-        throwError(inspector);
+        throwError("inspector");
       };
     });
   };
 
-  //
-  // ---------------------------------------------------------
-  // GET aHEAD
-  // ---------------------------------------------------------
-  //
-
-  const getaheadSubmitButton = document.querySelector("button.getahead");
-  const getaheadPasswordField = document.querySelector("input.getahead");
-  const getaheadPassword = "picoCTF{r3j3ct_th3_du4l1ty_2e5ba39f}"
-
-  if (getaheadSubmitButton) {
-    getaheadSubmitButton.addEventListener("click", event => {
-      if (getaheadPasswordField.value == getaheadPassword) {
-        window.location.href = "/success.html";
-      } else {
-        throwError(getahead);
-      };
-    });
-  };
-
-
-  //
-  // ---------------------------------------------------------
-  // Who are you?
-  // ---------------------------------------------------------
-  //
-
-
-  const whoareyouSubmitButton = document.querySelector("button.whoareyou");
-  const whoareyouPasswordField = document.querySelector("input.whoareyou");
-  const whoareyouPassword = "picoCTF{http_h34d3rs_v3ry_c0Ol_much_w0w_20ace0e4}"
-
-  if (whoareyouSubmitButton) {
-    whoareyouSubmitButton.addEventListener("click", event => {
-      if (whoareyouPasswordField.value == whoareyouPassword) {
-        window.location.href = "/success.html";
-      } else {
-        throwError("whoareyou");
-      };
-    });
-  };
-
+    //
     // ---------------------------------------------------------
+    // GET aHEAD
+    // ---------------------------------------------------------
+    //
+
+    const getaheadSubmitButton = document.querySelector("button.getahead");
+    const getaheadPasswordField = document.querySelector("input.getahead");
+    const getaheadPassword = "picoCTF{r3j3ct_th3_du4l1ty_2e5ba39f}"
+
+    if (getaheadSubmitButton) {
+      getaheadSubmitButton.addEventListener("click", event => {
+        if (getaheadPasswordField.value == getaheadPassword) {
+          window.location.href = "/success.html";
+        } else {
+          throwError("getahead");
+        };
+      });
+    };
+
+
+    //
+    // ---------------------------------------------------------
+    // Who are you?
+    // ---------------------------------------------------------
+    //
+
+
+    const whoareyouSubmitButton = document.querySelector("button.whoareyou");
+    const whoareyouPasswordField = document.querySelector("input.whoareyou");
+    const whoareyouPassword = "picoCTF{http_h34d3rs_v3ry_c0Ol_much_w0w_20ace0e4}"
+
+    if (whoareyouSubmitButton) {
+      whoareyouSubmitButton.addEventListener("click", event => {
+        if (whoareyouPasswordField.value == whoareyouPassword) {
+          window.location.href = "/success.html";
+        } else {
+          throwError("whoareyou");
+        };
+      });
+    };
+
+  // ---------------------------------------------------------
   // Picobrowser
   // ---------------------------------------------------------
   //
@@ -213,12 +213,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (picobrowserPasswordField.value == picobrowserPassword) {
         window.location.href = "/success.html";
       } else {
-        throwError(picobrowser);
+        throwError("picobrowser");
       };
     });
   };
 
- 
+  });
 
 
 

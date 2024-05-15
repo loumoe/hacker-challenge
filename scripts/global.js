@@ -35,7 +35,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (networkPasswordField.value == networkPassword) {
         window.location.href = "/challenges/hard/cow.html";
       } else {
-        throwError();
+        throwError("jellyfish");
       };
     });
   };
@@ -62,9 +62,18 @@ let errorTimer;
 function throwError(challenge) {
   clearTimeout(errorTimer);
 
-  document.querySelector(`.${challenge}`).classList.remove("hidden");
-
+  const errorMessage =  document.querySelector(`#${challenge}.error`)
+  if (errorMessage) {
+    errorMessage.classList.remove("hidden");
+  } else {
+    console.log("not found :(((((");
+  }
+ 
   errorTimer = setTimeout(() => {
-    document.querySelector(".error").classList.add("hidden");
+    errorMessage.classList.add("hidden");
   }, 3000);
 }
+
+/* wenn man innerhalb der 3000ms ach Klicken auf Button 1 auf einen anderen
+ submitButton 2 drückt, bleibt die errorMessage von Button 1 für immer und eeeeeeeewig
+ */
