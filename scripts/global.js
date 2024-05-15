@@ -59,10 +59,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
 // Form error handling
 let errorTimer;
 
-function throwError() {
+function throwError(challenge) {
   clearTimeout(errorTimer);
 
-  document.querySelector(".error").classList.remove("hidden");
+  document.querySelector(`.${challenge}`).classList.remove("hidden");
 
   errorTimer = setTimeout(() => {
     document.querySelector(".error").classList.add("hidden");

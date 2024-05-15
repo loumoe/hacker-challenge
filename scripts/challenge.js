@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (hiddenPasswordField.value == hiddenPasswordField.getAttribute("data-password")) {
         window.location.href = "/challenges/hard/bat.html";
       } else {
-        throwError();
+        throwError("");
       };
     });
   };
@@ -69,7 +69,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (storagePasswordField.value == password) {
         window.location.href = "/challenges/hard/gecko.html";
       } else {
-        throwError();
+        throwError("");
       }
     });
   } else {
@@ -96,7 +96,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (consolePasswordField.value == consolePassword) {
         window.location.href = "/challenges/hard/hare.html";
       } else {
-        throwError();
+        throwError("");
 
         if (clickCount >= 2) {
           console.log(`The password is ${consolePassword}`)
@@ -124,7 +124,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (stylesPasswordField.value == stylesPassword) {
         window.location.href = "/challenges/hard/jellyfish.html";
       } else {
-        throwError();
+        throwError("");
       };
     });
   };
@@ -151,7 +151,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (inspectorPasswordField.value == inspectorPassword) {
         window.location.href = "/success.html";
       } else {
-        throwError();
+        throwError(inspector);
       };
     });
   };
@@ -171,7 +171,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (getaheadPasswordField.value == getaheadPassword) {
         window.location.href = "/success.html";
       } else {
-        throwError();
+        throwError(getahead);
       };
     });
   };
@@ -193,7 +193,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (whoareyouPasswordField.value == whoareyouPassword) {
         window.location.href = "/success.html";
       } else {
-        throwError();
+        throwError("whoareyou");
       };
     });
   };
@@ -213,7 +213,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (picobrowserPasswordField.value == picobrowserPassword) {
         window.location.href = "/success.html";
       } else {
-        throwError();
+        throwError(picobrowser);
       };
     });
   };
